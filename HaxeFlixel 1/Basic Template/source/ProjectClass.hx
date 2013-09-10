@@ -8,7 +8,7 @@ class ProjectClass extends FlxGame {
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
 
-		// Sets up size and adds first screen
+		// Sets up size and adds first screen 
 		super(stageWidth, stageHeight, Screen1, 1, 30, 30);
 	}
 }
