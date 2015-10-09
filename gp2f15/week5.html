@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GAME PLAY 2: FALL '15</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="container">
+    <div class = "content">
+    <div id="contentheader">
+        <h1><a href="index.html">GAME PLAY 2: FALL '15</a></h1>
+        <ul>
+          <li>Instructor: Sam Sheffield (<a href="mailto:ssheffield@mica.edu">ssheffield@mica.edu</a>)</li>
+          <li>This Site (Short URL): <a href="http://tiny.cc/gp2f15">tiny.cc/gp2f15</a></li>
+              <li>Online syllabus: <a href="docs/gp2syllabus.pdf">gp2syllabus.pdf</a></li>
+              <li>Code repository: <a href="https://github.com/samsheffield/Game_Play_2_Digital_Games">github.com</a></li>
+              <!-- <li>Resources: <a href="links.html">links.html</a></li>-->
+        </ul>
+      </div> 
+
+      <h1>09/30: PAIN + UNITY: PROJECTILES, HEALTH, BEHAVIORS</h1>
+      <h2>TODAY:</h2>
+      <p>Welcome back!</p>
+      <ol>
+        <li>Share game prototypes</li>
+        <li>Unity, part 4</li>
+        <li>Pain</li>
+      </ol>
+
+      <h2>SHARE GAME PROTOTYPES</h2>
+      <p>Let's play everyone's games!</p>
+      <ul>
+        <li>Run your game in maximized view</li>
+        <li>Leave a note with instructions</li>
+        <li>Be sure to upload to your class Drive folder. (Compress the project folder into a .zip first)</li>
+      </ul>
+
+      <h2>UNITY 2D : PART 4</h2>
+      <p>Examples from class can be downloaded from <a href="https://github.com/samsheffield/Game_Play_2_Digital_Games/releases/tag/u4f15">here</a></p>
+      <p><strong>WARNING: Attaching scripts to projectile prefabs which need to be connected to GameObjects in the Hierarchy (like ScoreKeeper) will not work. Avoid spawning enemies for now. We'll be discussing a workaround next week!</strong></p>
+      <p>Some goals for today...</p>
+      <ol>
+        <li>More prefabs</li>
+        <li>Creating projectiles</li>
+        <li>Adding basic explosions</li>
+        <li>Adding health</li>
+        <li>Creating a basic healthbar</li>
+        <li>World space UI elements</li>
+        <li>Camera tricks!</li>
+        <li>Basic enemy behaviors: Spin, Patrol, Move Towards, &amp; Attack in Range</li>
+      </ol>
+
+      <p>Unitypackage to work with in class today is available <a href="docs/f15/Unity_4.unitypackage">here</a>.</p>
+
+      <h2>PAIN: FAILURE IN GAMES</h2>
+      <p>Why do we do it?</p>
+
+      <h2>THE PARADOX OF FAILURE IN GAMES</h2>
+      <ol>
+        <li>We generally avoid failure.</li>
+        <li>We experience failure when playing games.</li>
+        <li>We seek out games, although we will experience something that we normally avoid.</li>
+      </ol>
+      <ul>
+      <li>"Casual" games like <a href="https://www.youtube.com/watch?v=gaRZE5-n1WY">Flappy Bird</a> or <a href="https://www.youtube.com/watch?v=Out73NMtuMY">Crossy Road</a>, 2014.</li>
+      <li><a href="https://www.youtube.com/watch?v=20adRdhUZ-s">Flywrench, 2015</a></li>
+      <li><a href="https://www.youtube.com/watch?v=8sjaSoQG7aA">Pink Sweets</a>, 2006</li>
+      </ul>
+
+      <h2>TWO KINDS OF FAILURE IN GAMES</h2>
+      <blockquote>"Like tragedy in theater, cinema, and literature, failure makes us experience emotions that we generally find unpleasant. The difference is that games can be tragic in a literal sense [...]</blockquote>
+
+        <blockquote>We are real-life people who try to master a game, but most video games represent a mirror of our performance in their fictional worlds—they ask us to make things right in the game world by saving someone or fighting for self-preservation.</blockquote>
+        <ul>
+        <li><a href="https://www.youtube.com/watch?v=437Ld_rKM2s">Space Invaders</a>, 1978</li>
+        <li><a href="https://www.youtube.com/watch?v=T9kXKzYorFo">Robotron 2084</a>, 1982</li>
+        </ul>
+
+      <h2>THE GAMBLE OF FAILURE</h2>
+      <blockquote>We are motivated to play when something is at stake. It seems that the more time we invest into overcoming a challenge (be it completing a game, or simply overcoming a small subtask), the bigger the sense of loss we experience when failing, and the bigger the sense of triumph we feel when succeeding. Even then, our feeling of triumph can quickly evaporate if we learn that other players overcame the challenge faster than we did. To play a game is to make an emotional gamble: we invest time and self-esteem in the hope that it will pay off. Players are not willing to run the same amount of risk—some even prefer not to run a risk at all, not to play.</blockquote>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=91_DusA40sY">Dark Souls</a>, 2011 (also <a href="https://www.youtube.com/watch?v=iSCy4Bc0uMU">this</a></li>
+        <li>Rogue-likes such as <a href="https://www.youtube.com/watch?v=KyWK05CpDkA">Spelunky</a></li>
+      </ul>
+
+      <h2>LEARNING &AMP; SAVING THE WORLD</h2>
+      <blockquote>"Though we may dislike failure as such, failure is an integral element of the overall experience of playing a game, a motivator, something that helps us reconsider our strategies and see the strategic depth in a game, a clear proof that we have improved when we finally overcome it. Failure brings about something positive, but it is always potentially painful or at least unpleasant. This is the double nature of games, their quality as “pleasure spiked with pain.”</blockquote>
+
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=Or4F5-Tri3g">Super Meat Boy</a> replay feature</li>
+      </ul>
+
+      
+    </div>
+
+    <div class="content">
+      <h1>HOMEWORK</h1>
+      <h2>GAME PROTOTYPE 4</h2>
+      <p>Using the materials covered in class today, create a small prototype which includes...</p>
+      <ol>
+        <li>At least 2 types of moving enemies.</li>
+        <li>Health system for either player or enemy.</li>
+        <li>Use of projectiles from either player or enemies.</li>
+        <li>3 Unity scenes: Start, Game, End.</li>
+        <li>Use of Playerprefs to display final score on End screen.</li>
+        
+      </ol>
+      <p>We'll start off next week's class by taking turns playing everyone's prototypes.</p>
+      <p>Upload your entire Unity project to your class Drive folder</p>
+
+      <h2>BRING GAMEPAD (NEXT WEEK)</h2>
+      <p>Have a basic USB or Bluetooth gamepad which is compatible with your computer in class on Oct 7th.</p>
+
+      <h2>UPGRADE UNITY TO 5.2</h2>
+      <p>I've already ugpraded, so you should too. Otherwise, example code from class may not run</p>
+      <p>WINDOWS USERS: Unity now makes Visual Studio the default editor. If you prefer Monodevelop, you can switch it using Edit > Preferences > External Tools</p>
+    </div>
+
+    <div id="footer"></div>
+  </div>
+</body>
+</html>
